@@ -1,4 +1,7 @@
 import yaml
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 def yaml_load(filename):
     '''
@@ -8,3 +11,6 @@ def yaml_load(filename):
     with open(filename, 'r') as f:
         data = yaml.load(f)
         return data
+
+def hello_world():
+    logging.info('Hello, World!')
